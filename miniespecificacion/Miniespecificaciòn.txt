@@ -11,29 +11,29 @@
       >> opcion
       Mientras (auxiliar) entonces 
          Si (opcion == 1) entonces 
-              contador <-- contador + 1
-             función crearFacebook()
+             funcion crearFacebook()
          Caso Contrario Si (opcion == 2) entonces
-            función crearTwitter()
-            Caso Contrario Si (opcion == 3) entonces
-	función crearWhatsapp()
-              Caso Contrario Si (opcion == 4) entonces
-	      función crearTelegram()
-                Caso Contrario Si (opcion == 5) entonces
-	          función crearSignal()
-                  Caso Contrario Si (opcion == 6) entonces
-		 función crearInstagram()
-                     Caso Contrario Si (opcion == 7) entonces
-		     función crearFlickr ()
-	        Caso Contrario 
-                           <<"Error en opción seleccionada"
-                 	Fin Si
-                  	Fin Si
-                 	Fin Si
-                 	Fin Si
-                 	Fin Si
-                 	Fin Si
-                 	Fin Si
+                funcion crearTwitter()
+               Caso Contrario Si (opcion == 3) entonces
+	        funcion crearWhatsapp()
+                      Caso Contrario Si (opcion == 4) entonces
+	              funcion crearTelegram()
+                            Caso Contrario Si (opcion == 5) entonces
+	          	      funcion crearSignal()
+                 	     Caso Contrario Si (opcion == 6) entonces
+		            funcion crearInstagram()
+                     	           Caso Contrario Si (opcion == 7) entonces
+		     	   funcion crearFlickr ()
+	        		  Caso Contrario 
+                           		          <<"Error en opción seleccionada"
+                       		  Fin Si
+                  	          Fin Si
+                 	    Fin Si
+                            Fin Si
+                        Fin Si
+                Fin Si
+         Fin Si
+         contador <-- contador + 1
          << "Para ingresar màs cuentas presione 1, para terminar presione 2"
 	  >> opcion
          Si (opcion == 2) entonces 
@@ -65,7 +65,7 @@
 	             + "\nCorreo electronico" + mail 
      <<mensaje 
     Fin funcion crearFacebook
-   funcion crearTwitter()
+    funcion crearTwitter()
        nombreUsuario,x(60)[{a-z}, {A-Z}, {BS}])
        nombres,x(60)[{a-z}, {A-Z}, {BS}])
        apellidos,x(60)[{a-z}, {A-Z}, {BS}])
@@ -152,7 +152,6 @@
 
     Fin funcion crearTelegram
 
-
     funcion crearSignal()
       nombreUsuario,x(60)[{a-z}, {A-Z}, {BS}])
       telefono,i[0-n]
@@ -209,7 +208,6 @@
       <<mensaje 
     Fin funcion crearInstagram
 
-
     funcion crearFlickr()
       nombreUsuario,x(60)[{a-z}, {A-Z}, {BS}])
       mail,x(60)[{a-z}, {A-Z}, {BS}]) 
@@ -220,7 +218,7 @@
       <<"Ingrese su correo electronico"
       >>mail
 
-mensaje <-- "Cuenta creada con los siguientes datos\nNombre de usuario:"
+      mensaje <-- "Cuenta creada con los siguientes datos\nNombre de usuario:"
                           +nombreUsuario +"\nCorreo electronico" + mail 
       <<mensaje      
     Fin funcion crearFlickr
@@ -238,5 +236,7 @@ mensaje <-- "Cuenta creada con los siguientes datos\nNombre de usuario:"
 	>>mensajeFinal[2]
            Fin Si
     Fin funcion obtenermensaje
+
+  Fin
 
 
